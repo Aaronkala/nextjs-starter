@@ -8,7 +8,7 @@ const Home: React.FC = () => (
       <link href="/favicon.ico" rel="icon" />
     </Head>
 
-    <main></main>
+    <main>main</main>
 
     <footer></footer>
   </div>
