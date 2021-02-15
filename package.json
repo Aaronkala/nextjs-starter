@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": " eslint **/*.{tsx,ts,jsx,js} --fix",
+    "lint": "eslint -c .eslintrc.js --ext .jsx,.js,.ts,.tsx . --fix",
     "lint:styles": "stylelint './src/**/*.{tsx,jsx,ts,js}' '!**/*.d.ts'",
     "storybook": "start-storybook -p 6006"
   },
@@ -62,14 +62,5 @@
     "stylelint-processor-styled-components": "^1.10.0",
     "ts-jest": "26.5.1",
     "typescript": "4.1.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix"
   }
 }

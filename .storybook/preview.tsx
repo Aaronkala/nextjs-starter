@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import { StoryContext } from "@storybook/react";
 import { StoryFn } from "@storybook/addons";
-
-import { getTheme } from "../src/styles/getTheme";
 import { ThemeProvider } from "styled-components";
 
-
+import { getTheme } from "../src/styles/getTheme";
 
 export const parameters = {
   options: {
